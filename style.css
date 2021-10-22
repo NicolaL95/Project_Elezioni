@@ -1,0 +1,101 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('./digital-7.regular.ttf');
+}
+
+.main_title{
+    font-size: 4rem;
+}
+
+.desc_title{
+    font-size: 2rem;
+}
+
+.main_container{
+    background-image: url(./img/elezioni.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 600px;
+}
+
+.user_r{
+    color:rgb(236, 51, 88);
+    background-color:rgb(26, 25, 25);
+    width: 162px;
+    left: 22%;
+    font-family: 'digital-clock-font';
+    font-size: 2rem;
+    text-align: center;
+    top: 1%;
+    border: 1px dashed rgb(236, 51, 88);
+}
+.user_l{
+    left: 75%;
+}
+    
+.user_l > img{
+    transform: rotate(180deg);
+    width: 200px;
+}
+.user_l >p{
+    top: -3px;
+    width: 100px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    left: 4%;
+    margin-left: -4px;
+    font-family: monospace;
+}
+
+
+.activate_button{
+    border-radius: 250px;
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 50px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.activate_button:hover{
+    transform: rotate(360deg);
+}
+
+
+.cards{
+    background-color: grey;
+    width: calc(100% / 9);
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+p{
+    margin-block-end: 1px; 
+    margin-block-start: 1px;
+}
+
+i{
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.num_sel_container, .somma_prevista{
+    margin-block-end: 5px; 
+    margin-block-start: 5px;
+}
+
+.n_num_sel, .n_som_prev{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.name{
+    font-weight: 700; 
+}
