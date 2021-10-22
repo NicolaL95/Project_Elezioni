@@ -52,7 +52,7 @@ body{
 }
 
 
-.activate_button{
+#activate_button{
     border-radius: 250px;
     height: 250px;
     width: 250px;
@@ -63,7 +63,7 @@ body{
     transition-property: transform;
 }
 
-.activate_button:hover{
+#activate_button:hover{
     transform: rotate(360deg);
 }
 
